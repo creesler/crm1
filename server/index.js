@@ -4,7 +4,7 @@ import roomRouter from './routes/roomRouter.js'
 import mongoose from 'mongoose'
 import userRouter from './routes/userRouter.js'
 // import projectRouter from './routes/projectRouter.js'
-
+import cors from 'cors'
 
 dotenv.config()
 
@@ -13,6 +13,13 @@ const port = process.env.PORT || 5000
 
 
 const app = express()
+
+app.use(
+    cors({
+        origin: "https://crmmva.netlify.app",
+        methods: ["GET", "POST", "PUT", "DELETE"]
+
+}))
 
 app.use((req, res, next)=>{
     res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_URL)
