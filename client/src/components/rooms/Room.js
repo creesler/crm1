@@ -113,7 +113,7 @@ const Room = () => {
                 flexWrap: 'wrap',
                 }}
                 >
-                    {/* <Box>
+                    <Box>
                         <Typography variant='h6' component='span'>
                             {'Date Created:'}
                         </Typography>
@@ -168,16 +168,16 @@ const Room = () => {
                         <Typography component='span'>
                             {room?.employee}
                         </Typography>
-                    </Box> */}
-                    <Box>
+                    </Box>
+                    {/* <Box>
                         <Typography variant='h6' component='span'>
                             {'Price Per Night:'}
                         </Typography>
                         <Typography component='span'>
                             {room?.price ===0 ? 'Free Stay' : '$'+room?.price}
                         </Typography>
-                    </Box>
-                    <Box
+                    </Box> */}
+                    {/* <Box
                     sx={{
                         display:'flex',
                         alignItems:'center',
@@ -192,7 +192,7 @@ const Room = () => {
                             precision={0.5}
                             emptyIcon={<StarBorder />}
                         />
-                    </Box>
+                    </Box> */}
                 </Stack>
                 <Stack
                 direction="row"
@@ -201,7 +201,7 @@ const Room = () => {
                     flexWrap: 'wrap',
                     }}
                 >
-                    <Box>
+                    {/* <Box>
                         <Typography variant='h6' component='span'>
                             {'Place Name:'}
                         </Typography>
@@ -221,9 +221,9 @@ const Room = () => {
                         <Typography component='span'>
                             {place?.place_name}
                         </Typography>
-                    </Box>
+                    </Box> */}
                 </Stack>
-                <Stack>
+                {/* <Stack>
                 <Typography variant='h6' component='span'>
                             {'Details: '}
                         </Typography>
@@ -232,8 +232,8 @@ const Room = () => {
                         </Typography>
 
                         Testing
-                        <Rooms/>
-                </Stack>
+                        
+                </Stack> */}
             </Stack>
         </Container>
     </Dialog>
