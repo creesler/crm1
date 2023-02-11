@@ -16,7 +16,7 @@ const app = express()
 
 app.use(
     cors({
-        origin: "https://crmmva.netlify.app",
+        origin: "https://crmmva.netlify.app/",
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true
 
